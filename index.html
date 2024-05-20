@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            alert("Приветствую Вас на этом сайте!");
+        };
+    </script>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="history.html" class="header__link">История</a>
+                        </li>
+                        <li class="header__item">
+                            <div class="header_logo">
+                                <a href="#met1" class="header__logo-link">
+                                    <img src="./img/dragonlogo.png" alt="logo" class="header__logo-pic">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__item">
+                            <a href="Persons.html" class="header__link">Персонажи</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper__intro">
+
+                    <h1 class="intro__title">
+                        Танцующий дракон
+                    </h1>
+                    <p class="intro__subtitle">
+                        "Танцующий Беззубик" - это мем, вдохновленный персонажем беззубика из популярного мультфильма "Как Приручить Дракона". 
+                        <dl style="font-size: 25px;">
+                            <dt>Беззубик</dt>
+                                <dd>
+                                    Лучший танцор!
+                                </dd>
+                        </dl>
+                        <button id="dragonButton">Оценить дракона</button>
+                        <div class="gif__contanier">
+                            <img src="./img/dragondance.gif" alt="dancing dragon gif">
+                        </div>  
+            </div>
+        </section>
+        <selection class="senond__block">
+            <div class="block__wrap">
+                <h2 class="block__title">
+                    Видеоролики с танцующим беззубиком
+                </h2>
+                
+                <ol class="videos">
+                    <li><iframe src="https://www.youtube.com/embed/3DanthIsr3I?si=sdFlw9xIkerLOiie&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                    <li><iframe src="https://www.youtube.com/embed/K4K3wn9k7vk?si=9mMIe54ueGKpBVUx&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                    <li><iframe src="https://www.youtube.com/embed/4dDUWRWqcIo?si=UDy0IFxGMnPj6w0w&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                </ol>
+                <ol class="videos2">
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/0vb1PUT1oxE?si=MV2DXGlTXHL2naMp&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                    <li> <iframe width="560" height="315" src="https://www.youtube.com/embed/KM0-dWPyTW4?si=kW7LSVyxAGvmh-mO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                </ol>
+            </div>
+        </selection>
+        <selection class="third__block">
+            <div class="wrapper__intro">
+                <h2 id="met1"class="block__title">
+                    Виды Дракона
+                </h2>
+                <table class="type__dragon">
+                    <tr>
+                       <td>Дневная фурия</td>
+                        <td><img src="./img/dragondance2.gif" alt="photo" style="width: 400px; height: auto;"></td>
+                        <td>Ночная фурия</td>
+                        <td><img src="./img/dragondance.gif" alt="photo" style="width: 400px; height: auto;"></td>
+                    </tr> 
+                    <tr>
+                        <td>Ночная фурия с красным хвостом</td>
+                        <td><img src="./img/reddragon.gif" alt="photo" style="width: 400px; height: auto;"></td>
+                        <td>Праздничная ночная фурия</td>
+                        <td><img src="./img/happydragon.gif" alt="photo" style="width: 400px; height: auto;"></td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="4">Маленькая ночная фурия</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="4"><img src="./img/dragondancingsmall.gif" alt="photo" style="width: 400px; height: auto;"></td>
+                    </tr>
+                </table>
+            </div>
+        </selection>
+    </main>
+    <footer>
+        <a href="#top" class="footer__link"> Слукин Никита/ИСТ-361</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
